@@ -1,0 +1,4 @@
+ld
+*.pyc
+dev.db
+*.log
