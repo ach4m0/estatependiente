@@ -1,0 +1,5 @@
+# Execute `pip install -r requirements.txt`
+
+Django==1.5.4
+django-dajaxice
+
