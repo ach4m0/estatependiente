@@ -2,7 +2,7 @@ from django.shortcuts import render_to_response
 from django.template.context import RequestContext
 
 from .models import Category,Product
-#from estatependiente.parameters.models import Parameter
+from estatependiente.parameters.models import Parameter
 
 def view_category(request,category):
     categories = Category.objects.all()
