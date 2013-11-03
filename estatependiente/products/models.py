@@ -2,8 +2,6 @@
 
 from django.db import models
 
-from estatependiente.products import managers
-
 class CommonFields(models.Model):
     """
     Clase abstracta con los campos comunes para los modelos de products
