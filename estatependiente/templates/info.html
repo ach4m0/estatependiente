@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block categories %}
+{% for category in categories %}
+    <li data-link='#'>{{category.name}}</li>
+{% endfor %}
+
+{% endblock %}
+
+{% block content %}
+<article>
+    {% autoescape off %}
+        {{ document.text|linebreaks }}
+    {% endautoescape %}
+</article>
+{% endblock %}
+

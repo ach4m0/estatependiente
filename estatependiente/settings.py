@@ -129,6 +129,7 @@ INSTALLED_APPS = (
     'dajaxice',
     #Aplicacion
     'estatependiente.products',
+    'estatependiente.parameters',
 )
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'

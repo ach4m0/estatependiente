@@ -20,3 +20,18 @@ def home(request):
                             'contact': contact,
                             },context_instance=RequestContext(request))
 
+def info(request,document):
+    categories = Category.objects.all()
+    try:
+        contact = Parameter.objects.filter(name='contacto').get()
+        doc = Parameter.objects.filter(name=document).get()
+        context = {'document': doc,
+                   'categories': categories,
+                   'contact': contact
+                  }
+    except Parameter.DoesNotExist:
+        return HttpResponseRedirect('/')
+    else:
+        return render_to_response('info.html',
+                                  context,
+                                  context_instance=RequestContext(request))
