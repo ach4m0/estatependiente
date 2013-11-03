@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/products.css"/>
+{% endblock %}
+
+{% block categories %}
+{% for category in categories %}
+    <li data-link='/categoria/{{category.path}}'>{{category.name}}</li>
+{% endfor %}
+
+{% endblock %}
+
+{% block content %}
+    <section class="products">
+        {% for product in products %}
+        <article class="product">
+            <img src="{{STATIC_URL}}media/{{product.image1}}"/>
+            <span class="price">{{ product.price }} €</span>
+            <span class="title">{{ product.name }}</span>
+        </article>
+        {% endfor %}
+    </section>
+    </section>
+
+{% endblock %}
+
