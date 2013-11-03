@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block categories %}
+{% for category in categories %}
+    <li data-link='/categoria/{{category.path}}'>{{category.name}}</li>
+{% endfor %}
+
+{% endblock %}
+
+{% block content %}
+    <article id="articleWelcome">
+        <h2>¡Bienvenidos a Estate Pendiente!</h2>
+        <div><img alt="Estate Pendiente" src="{{STATIC_URL}}img/logo.png"/></div>
+        <p>{% autoescape off%}{{ welcome.text|linebreaksbr }}{% endautoescape %}</p>
+    </article>
+
+    <article>
+        <h2>Novedades</h2>
+        <div class="grid">
+    {% for product in products %}
+            <div class="grid-unit">
+                <div class="grid-image">
+                    <img src="{{STATIC_URL}}media/{{product.image1}}"/>
+                </div>
+                <p>{{product.name}}</p>
+            </div>
+    {% endfor %}
+        </div>
+    </article>
+
+{% endblock %}
+
