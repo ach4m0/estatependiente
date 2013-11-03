@@ -1,4 +1,4 @@
 ld
 *.pyc
-dev.db
+*.db
 *.log
