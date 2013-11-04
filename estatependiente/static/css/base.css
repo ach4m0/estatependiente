@@ -6,13 +6,13 @@
 html,
 body {
   color: #333;
-  font: 16px Open Sans;
+  font: 16px 'Open Sans';
   overflow-x: hidden;
   text-align: center;
   width: 100%;
 }
 header {
-  font-family: Oxygen;
+  font-family: 'Oxygen';
   width: 100%;
 }
 header #logoHeader {
@@ -101,6 +101,7 @@ section article .grid .grid-unit .grid-image {
 }
 section article .grid .grid-unit .grid-image img {
   border: 1px solid #aaa;
+  max-height: 161px;
   width: 100%;
 }
 section article .grid .grid-unit p {
