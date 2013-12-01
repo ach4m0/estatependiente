@@ -42,3 +42,14 @@
 
 {% endblock %}
 
+{% block scripts %}
+    <script type="text/javascript">
+    $(document).on('ready',function(){
+        $('div.images>ul li').on('click',function(){
+            image = $(this).find('img').attr('src');
+            $('div.main-image').find('img').attr('src',image);
+        })
+    })
+    </script>
+{% endblock %}
+
