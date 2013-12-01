@@ -16,9 +16,9 @@ section{
 }
 .product>img{
   border: 1px solid #d8d8d8;
-  max-height: 8.25em;
-  min-height: 8.25em;
-  max-width: 10.5em;
+  max-height: 12.25em;
+  min-height: 12.25em;
+  max-width: 14.5em;
   width: 100%;
   z-index: 4;
 }

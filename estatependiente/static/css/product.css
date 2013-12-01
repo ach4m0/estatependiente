@@ -18,7 +18,7 @@ section{
 .product>.images>ul>li{
   display: inline-block;
   margin: 2em 1%;
-  width: 31%;
+  width: 30%;
 }
 .product>.images>ul>li:hover{
   cursor: pointer;
@@ -35,6 +35,7 @@ section{
 }
 .product>.images>.main-image>img{
   height: 100%;
+  max-width: 100%;
 }
 .product>.detail{
   margin: 0 auto;
