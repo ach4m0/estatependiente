@@ -46,8 +46,11 @@
             $('header>nav>ul li').on('click',function(){
                 url = $(this).attr('data-link');
                 $(location).attr('href',url);
-            })
-        })
+            });
+            $('#logoHeader').find('img').on('click',function(){
+                $(location).attr('href','/');
+            });
+        });
     </script>
     {% block scripts %}{% endblock %}
 </body>

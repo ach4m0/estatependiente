@@ -14,7 +14,7 @@
 {% block content %}
     <section class="products">
         {% for product in products %}
-        <article class="product">
+        <article class="product" data-link="{{ product.path }}">
             <img src="{{STATIC_URL}}media/{{product.image1}}"/>
             <span class="price">{{ product.price }} €</span>
             <span class="title">{{ product.name }}</span>
@@ -25,3 +25,13 @@
 
 {% endblock %}
 
+{% block scripts %}
+    <script type="text/javascript">
+    $(document).on('ready',function(){
+        $('article.product').on('click',function(){
+            url = $(this).attr('data-link');
+            $(location).attr('href','/producto/' + url);
+        })
+    })
+    </script>
+{% endblock %}
