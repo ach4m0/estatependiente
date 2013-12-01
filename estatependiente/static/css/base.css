@@ -28,6 +28,7 @@ header #logoHeader h1 {
 }
 header #logoHeader h1 img {
   height: 100%;
+  max-height: 190px;
 }
 header #logoHeader h1 img:hover {
   cursor: pointer;
