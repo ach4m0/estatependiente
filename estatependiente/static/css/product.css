@@ -5,7 +5,7 @@ section{
   border: 1px solid #FAFAFA;
 }
 .product{
-  width: 100%;
+  width: 90%;
 }
 .product>h3{
   color: rgb(233, 104, 160);
@@ -19,6 +19,9 @@ section{
   display: inline-block;
   margin: 2em 1%;
   width: 31%;
+}
+.product>.images>ul>li:hover{
+  cursor: pointer;
 }
 .product>.images>ul>li>img{
   max-height: 6.25em;
@@ -54,11 +57,19 @@ section{
   text-decoration: none;
   width: 50%;
 }
-
-
-@media screen and (min-width: 42em){
-}
 @media screen and (min-width: 52em){
+  .product>h3{
+    margin-left: 3em;
+    text-align: left;
+  }
+  .product>.images,.product>.detail{
+    float: left;
+    width: 45%;
+  }
+  .product>.category-link{
+    float: left;
+    width: 10%;
+  }
 }
 @media screen and (min-width: 58em){
 }
