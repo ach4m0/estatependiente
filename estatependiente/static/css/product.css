@@ -1,74 +1,64 @@
 section{
   box-sizing: border-box;
 }
-.products{
-  padding: 0;
-  max-width: 90em;
-  width: 100%;
+.border{
+  border: 1px solid #FAFAFA;
 }
 .product{
-  margin-bottom: 2em;
   width: 100%;
 }
-.product:hover{
-  box-shadow: 0 0 15px #d8d8d8;
-  cursor: pointer;
+.product>h3{
+  color: rgb(233, 104, 160);
+  font: 1.8em 'Oxygen';
+  margin: 1em;
 }
-.product>img{
-  border: 1px solid #d8d8d8;
-  max-height: 8.25em;
-  min-height: 8.25em;
-  max-width: 10.5em;
+.product>.images>ul{
+  list-style: none;
+}
+.product>.images>ul>li{
+  display: inline-block;
+  margin: 2em 1%;
+  width: 31%;
+}
+.product>.images>ul>li>img{
+  max-height: 6.25em;
+  min-height: 6.25em;
+  max-width: 5.5em;
+  height: 100%;
+}
+.product>.images>.main-image{
+  height: 300px;
   width: 100%;
-  z-index: 4;
 }
-.product>img:hover{
-  box-shadow: 0 0 15px #e968a0;
+.product>.images>.main-image>img{
+  height: 100%;
 }
-.product>span{
-  display: block;
-}
-.product>span.price{
-  background: #e968a0;
-  border: 1px solid #e54c8e;
-  color: #fff;
-  font-weight: bold;
+.product>.detail{
   margin: 0 auto;
-  margin-top: -1em;
-  margin-bottom: 1em;
-  max-width: 8.43em;
-  padding: .5em .5em;
-  position: relative;
-  width: 25%;
-  z-index: 1;
+  text-align: left;
+  width: 80%;
 }
-.product>span.title{
-  font-family: Oxygen;
-  font-size: 1.3em;
-  min-height: 3em;
+.product>.detail>span{
+  font-size: 1.2em;
+  color: rgb(233, 104, 160);
+  margin: 0 auto;
+  width: 50%;
 }
+.product>.category-link{
+  background: rgb(233, 104, 160);
+  color: white;
+  display: block;
+  font-size: .8em;
+  margin: 1em auto;
+  padding: 1em;
+  text-decoration: none;
+  width: 50%;
+}
+
+
 @media screen and (min-width: 42em){
-  .product{
-    box-sizing: border-box;
-    float: left;
-    padding: 1em;
-    margin-bottom: .5em;
-    min-height: 18em;
-    max-height: 18em;
-    width: 50%;
-  }
-  .product>span.title{
-    font-size: 1em;
-  }
 }
 @media screen and (min-width: 52em){
-  .product{
-    margin-bottom: 0;
-    width: 25%;
-  }
 }
 @media screen and (min-width: 58em){
-  .product{
-    width: 20%;
-  }
 }
