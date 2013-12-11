@@ -18,7 +18,7 @@
         <h2>Novedades</h2>
         <div class="grid">
     {% for product in products %}
-            <div class="grid-unit">
+            <div class="grid-unit" data-link="{{product.path}}">
                 <div class="grid-image">
                     <img src="{{STATIC_URL}}media/{{product.image1}}"/>
                 </div>
@@ -30,3 +30,13 @@
 
 {% endblock %}
 
+{% block scripts %}
+    <script type="text/javascript">
+    $(document).on('ready',function(){
+        $('.grid-unit').on('click',function(){
+            url = $(this).attr('data-link');
+            $(location).attr('href','/producto/' + url);
+        })
+    })
+    </script>
+{% endblock %}

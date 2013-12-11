@@ -143,6 +143,9 @@ footer div p {
 footer div p a {
   color: #fff;
 }
+.grid-unit:hover{
+  cursor: pointer;
+}
 @media screen and (min-width: 48em) {
   header > #logoHeader {
     height: 7em;
