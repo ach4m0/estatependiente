@@ -9,7 +9,7 @@ from estatependiente.parameters.models import Parameter
 
 def home(request):
     categories = Category.objects.all()
-    products = Product.objects.all()[:3]
+    products = Product.objects.all().order_by("-update_date")[:3]
     parameters = Parameter.objects.all()
     welcome = parameters.get(name='bienvenida')
     contact = parameters.get(name='contacto')
