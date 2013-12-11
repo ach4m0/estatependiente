@@ -52,7 +52,6 @@ section{
     box-sizing: border-box;
     float: left;
     padding: 1em;
-    margin-bottom: .5em;
     min-height: 18em;
     max-height: 18em;
     width: 50%;
@@ -63,7 +62,7 @@ section{
 }
 @media screen and (min-width: 52em){
   .product{
-    margin-bottom: 0;
+    margin-bottom: 4em;
     width: 25%;
   }
 }
